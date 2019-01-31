@@ -63,6 +63,7 @@ class BusStation {
 
     for (let i =0;i<arrayOfBusNumbers.length;i++){
       let obj = {};
+      obj.stopName = this.name;
       obj.busNumber = arrayOfBusNumbers[i];
       obj.schedule = arrayOfSchedules[i];
       result.push(obj);
@@ -90,7 +91,7 @@ firstStop.addBus(busNumber3);
 
 //console.log(firstStop.busses);
 
-console.log(firstStop.displayBusNumber()); // Should display 2.
+//console.log(firstStop.displayBusNumber()); // Should display 2.
 
 //console.log(firstStop.displaySchedule()); // Should display schedule for this stop.
 
