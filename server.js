@@ -21,7 +21,7 @@ const server = http.createServer((req,res) => {
         break;
     default:
       res.statusCode = 404;
-      res.end("Error: Page not find");
+      res.end("Error: Page not found");
 
   }
 
